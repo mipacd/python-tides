@@ -16,7 +16,7 @@ for location in locations:
 	get_text = get_html(url)
 	parse = BeautifulSoup(get_text, 'html.parser')
 	
-	# read JSON object
+	# search for script tags
 	script_tags = parse.find_all('script')
 	
 	# find tag containing JSON object
